@@ -1,0 +1,9 @@
+Player1:
+ Start: G
+ Select: F
+ # GPIO BCM pin numbering
+ Latch: 18
+ Data: 23
+ Clock: 24
+
+ 
