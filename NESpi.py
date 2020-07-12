@@ -29,7 +29,7 @@ class NEScontroller:
 	def exec(self):
 		if GPIO.input(self.clock):
 			GPIO.output(18, 1)
-			self.uinput.write(e.EV_KEY, 30, 2)
+			self.uinput.write(e.EV_KEY, e.KEY_A, 1) #2 hold
 		else:
 			GPIO.output(18, 0)
 			self.uinput.write(e.EV_KEY, e.KEY_A, 0)
